@@ -18,11 +18,14 @@ public class Main {
             System.out.print("Time's up. " + userNumber + " seconds have passed");
         }
         else if (choice.equals("d")) {
+            int num = 0;
             while (userNumber >= count) {
                 System.out.println(userNumber);
                 userNumber--;
+                num++;
             }
-            System.out.print("Time's up. " + userNumber + " seconds have passed");
+            int initialUserNumber = userNumber+num;
+            System.out.print("Time's up. " + initialUserNumber + " seconds have passed");
         }
         else {
             System.out.print("Error. Enter a valid entry.");
